@@ -76,6 +76,7 @@
 }
 
 .searchrectangle {
+    background-color: rgba(205, 214, 210, 0.692);
     margin-top: 5px;
     border-radius: 10%;
     height: 25px;
