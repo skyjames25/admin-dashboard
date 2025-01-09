@@ -1,0 +1,277 @@
+.container {
+    background-color: rgba(205, 214, 210, 0.692);
+    display:grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr 8fr;
+    min-height:100vh;
+    border: 2px solid blue;
+    grid-template-areas:
+    "sidebar header "
+    "sidebar mainbody"
+    ;
+    
+    
+}
+
+
+
+.sidebar {
+    grid-area:sidebar;
+    border:1px solid darkblue;
+    background:rgb(59, 186, 236);
+    color:white;
+    display:grid;
+    grid-template-rows: 0.5fr 2fr 1fr 2.5fr;
+}
+
+
+.sidebar-top {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-mid{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-btm{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: white;
+    grid-area:header;
+    border:1px solid yellow;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "searchbar userpanel"
+    "greetings buttons";
+    
+}
+
+.header .searchbar {
+    grid-area:searchbar;
+    display:grid;
+    grid-template-columns: 0.1fr 1fr;
+
+}
+
+.searchrectangle {
+    margin-top: 5px;
+    border-radius: 10%;
+    height: 25px;
+    width:400px;
+}
+
+.magnify {
+    width:35px;
+    height:35px;
+}
+
+.header .greetings {
+    grid-area:greetings;
+    display:grid;
+    grid-template-columns: 0.3fr 1fr;
+}
+
+.header .greetings .greetings-text {
+    display:grid;
+    grid-template-rows:0.2fr 1fr;
+    gap: 5px;
+}
+
+.rabbit-icon {
+    margin-left: 20px;
+    margin-top: -6px;
+    width:50px;
+    height:50px;
+}
+
+.rabbit-icon2{
+    margin-left: 10px;
+    width:20px;
+    height:20px;
+}
+
+
+
+
+.header .userpanel {
+    grid-area: userpanel;
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+}
+
+.userpaneltext {
+    width:100px;
+    margin-left: 10px;
+}
+
+.header .userpanel .bell-ring{
+    width:20px;
+    height:20px;
+    margin-left: 20px;
+}
+.header .buttons {
+    grid-area:buttons;
+
+    display:grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    margin-top: 5px;
+    margin-left: 20px;
+    gap:50px;
+  
+
+    
+}
+
+.button{
+    
+
+    margin:0;
+    gap:0px;
+    height:30px;
+    width:70px;
+    background-color:rgb(96, 229, 247);
+}
+
+
+
+
+.mainbody{
+    grid-area:mainbody;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "main announcements"
+    "main trending";        
+    gap:30px
+           
+    
+}
+
+
+
+.main {
+    grid-area:main;
+    border:1px solid grey;
+    display:grid;
+    grid-template-rows: 0.05fr 2fr;
+    margin-bottom: 100px;
+}
+
+.main .projects {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "project1 project2"
+    "project3 project4"
+    "project5 project6";
+    gap:25px;
+}
+
+.project-title {
+    border:1px solid red;
+}
+
+.projects >div{
+    grid-area:project1;
+    border:1px solid brown;
+    display:grid;
+
+    grid-template-rows: 1fr 0.2fr;
+}
+
+
+
+.rabbit-svg{
+    margin-left: auto;
+}
+
+.projects .project2{
+    grid-area:project2;
+    border:1px solid brown;
+}
+
+.projects .project3{
+    grid-area:project3;
+    border:1px solid brown;
+}
+
+.projects .project4{
+    grid-area:project4;
+    border:1px solid brown;
+}
+
+.projects .project5{
+    grid-area:project5;
+    border:1px solid brown;
+}
+
+.projects .project6{
+    grid-area:project6;
+    border:1px solid brown;
+}
+
+.rabbit-svg{
+    width: 20px;
+    height: 20px;
+    margin:8px;
+}
+
+.btm-icons {
+    width:100%;
+    display: flex;
+    justify-content: end;
+
+ 
+}
+
+.announcements {
+    grid-area: announcements;
+    border:1px solid green;
+    display:grid;
+    grid-template-rows: 0.05fr 2fr;
+   
+}
+
+.announcements-header{
+    border:1px solid red;
+}
+
+.announcements .announcements-container {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trending {
+    grid-area:trending;
+    border:1px solid purple;
+    display:grid;
+    grid-template-rows: 0.2fr 2fr ;
+    margin-bottom: 100px;
+
+}
+
+.trending-header{
+    border:1px solid red;
+}
+
+.trending-container {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
